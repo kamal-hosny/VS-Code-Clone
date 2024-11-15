@@ -1,9 +1,11 @@
 export const extensionIconPaths: Record<string, string> = {
     // ** Files
     tsx: "/icons/react_ts",
-    js: "/icons/typescript",
+    ts: "/icons/typescript",
+    js: "/icons/javascript",
     jsx: "/icons/react",
     html: "/icons/html",
+    json: "/icons/json",
   
     // ** Folders
   
@@ -12,3 +14,4 @@ export const extensionIconPaths: Record<string, string> = {
     src: "/icons/folder-src",
     app: "/icons/folder-app",
   };
+  
