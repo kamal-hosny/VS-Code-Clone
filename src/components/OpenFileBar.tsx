@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../app/store";
 import OpenedFilesBarTab from "./OpenedFilesBarTab";
-import FileSyntaxHighlighter from "./FileSyntaxHighlighter";
 import { ContextMenu } from "./ui/ContextMenu";
 
 interface IProps {

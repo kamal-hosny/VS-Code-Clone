@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { IFile } from "../interfaces";
 import RenderFileIcon from "./RenderFileIcon";
 import CloseIcon from "./SVG/CloseIcon";
@@ -9,7 +8,7 @@ import {
   setTabIdToRemoveAction,
 } from "../app/features/fileTreeSlice";
 import { RootState } from "../app/store";
-import { ContextMenu } from "./ui/ContextMenu";
+
 
 interface IProps {
   file: IFile;
@@ -61,7 +60,7 @@ const OpenedFilesBarTab = ({ file }: IProps) => {
   return (
     <div
       className={`max-w-screen-md flex items-center p-2 border-t-2 ${
-        file.id === clickedFile.aconClosetiveTapId
+        file.id === clickedFile.activeTapId
           ? "border-[#cf6ccf]"
           : "border-transparent"
       }`}

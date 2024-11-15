@@ -7,8 +7,6 @@ interface IProps {
   isOpen?: boolean;
 }
 
-
-
 const RenderFileIcon = ({ filename, isFolder, isOpen }: IProps) => {
   const extension = filename.split(".").pop();
 
